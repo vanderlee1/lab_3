@@ -19,9 +19,8 @@ deviation in separate functions.
 
 #include <iostream>
 #include <string>
-#include <iomanip>
 #include <fstream>
-#include <cstdlib>
+#include <cmath>
 using namespace std;
 
 float meanFunction(int, int, int, int); //prototype for the mean functinon
@@ -31,7 +30,7 @@ float stdFunction(int, int, int, int, float); // prototype for the population st
 int main()
 {
 
-	//jijlhjk
+	
 
 	//input variables
 	int value1;
@@ -53,15 +52,13 @@ int main()
 
 	//prompt for the user
 	
-	cout << "This program is gonna calculate the mean and the population standard deviation of a set of four integers." << endl;
+	cout << "This program is going to calculate the mean and the population standard deviation of a set of four integers." << endl;
 
 	//calculate values
 	outputFileName << "This is the mean of the integers in the document: " << meanFunction(value1, value2, value3, value4) << endl;
 	outputFileName << "This is the population standard deviation of the integers in the document: " << stdFunction(value1, value2, value3, value4, meanFunction(value1, value2, value3, value4)) << endl << endl << endl;
 
-	//output values on the screen
-	//cout << "This is the mean of the integers in the document:  " << meanFunction(value1, value2, value3, value4) << endl;
-	//cout << "This is the population standard deviation of the integers in the document:  " << stdFunction(value1, value2, value3, value4, meanFunction(value1, value2, value3, value4)) << endl << endl;
+	
 
 	//promt for the user
 	cout << "Put in 4 integers. Afer you put in one integer you should press enter" << endl;
