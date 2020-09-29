@@ -85,7 +85,7 @@ float meanFunction(int value1, int value2, int value3, int value4) //Function de
 	return (float(value1 + value2 + value3 + value4) / float(4));
 }
 
-float stdFunction(int value1, int value2, int value3, int value4, float average) //Function defintion of the population standard deviation
+float stdFunction(int value1, int value2, int value3, int value4, float meanFunction) //Function defintion of the population standard deviation
 {
-	return sqrt((float(pow((value1 - average), 2) + pow((value2 - average), 2) + pow((value3 - average), 2)) + pow((value4 - average), 2)) / 4);
+	return sqrt((float(pow((value1 - meanFunction), 2) + pow((value2 - meanFunction), 2) + pow((value3 - meanFunction), 2)) + pow((value4 - meanFunction), 2)) / float(4));
 }
