@@ -18,9 +18,8 @@ deviation in separate functions.
 
 
 #include <iostream>
-#include <string>
-#include <fstream>
-#include <cmath>
+#include <fstream> //needed for the input and output files
+#include <cmath> //needed for the functions
 using namespace std;
 
 float meanFunction(int, int, int, int); //prototype for the mean functinon
